@@ -19,7 +19,7 @@ jobs:
     - run: ft=$(docker images --format="{{.Repository}} {{.ID}}" | grep "frontend" | cut -d' ' -f2) && docker tag $ft jlerocher/udagram-frontend:v1
     - run: rp=$(docker images --format="{{.Repository}} {{.ID}}" | grep "reverse" | cut -d' ' -f2) && docker tag $rp jlerocher/udagram-reverseproxy:v1
     - run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-    - run: docker push udagram-reverseproxy
-    - run: docker push udagram-frontend
-    - run: docker push udagram-api-user
-    - run: docker push udagram-api-feed
+    - run: docker push jlerocher/udagram-reverseproxy
+    - run: docker push jlerocher/udagram-frontend
+    - run: docker push jlerocher/udagram-api-user
+    - run: docker push jlerocher/udagram-api-feed
