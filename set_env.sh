@@ -1,11 +1,16 @@
 # This file is used for convenience of local development.
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
+alias cls=clear
 export POSTGRES_USERNAME=jlerocher
 export POSTGRES_PASSWORD=admin1234
 export POSTGRES_HOST=udagram-instance-db.cyn98kqvfosh.us-east-1.rds.amazonaws.com
 export POSTGRES_DB=udagram_db
 export AWS_BUCKET=jlerocher_udagram_bucket
 export AWS_REGION=us-east-1
-export AWS_PROFILE=default
+export AWS_PROFILE=jlerocher
 export JWT_SECRET=testing
 export URL=http://localhost:8100
+#export AWS_ACCESS_KEY_ID=ASIA4SKFF73SVFLP2JFG
+#export AWS_SECRET_ACCESS_KEY=9Jm9Lm32KU/mOQb4mYExLIQAIdoG1pV2ku9Phlct
+#export AWS_SESSION_TOKEN=FwoGZXIvYXdzELr//////////wEaDHFIoMavXKJ5DpQ7wyLVAYb3HFRkSUi67OeMnBoKYxoXvJI/EGdR8QqOUjLvp4iens301PFxFCnJ5qIYl+Q7334ThkEw3w5VpsTuJFQVvfMe+Qr6UVm+4mWN9Tm/jaMmSxPUdjURnixkFYND6nJypb5a9HPy4NS7HM38eibm3quWbOhcHZPW782+L22Pd0WdZZHztRby8sO7Xx42MYFKlKYqYtayE91XMQmm5gCziOtXdNhnmD7AzkAu548I0eOTuERhyHoKh6PrnDYLlsWh4sHRPpQGdycOZFdzBTEfV7uieHchtSi2z5SaBjIt3sh1y647AIXcSPYHAXf99NUXeA87nF7zFeAdlybsdjN6ph+hRSOezzmcQHRn
+export AWS_PROFILE=jlerocher
