@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: jlerocher/udagram-frontend:v1
+        image: jlerocher/udagram-frontend:v2
         ports:
         - containerPort: 80
         envFrom:

@@ -24,3 +24,10 @@ spec:
               name: env-configmap
           - secretRef:
               name: env-pg-secrets
+        volumeMounts:
+          - mountPath: "/root/aws"
+            name: aws-creds
+      volumes:
+        - name: aws-creds
+          configMap:
+            name: aws-creds
